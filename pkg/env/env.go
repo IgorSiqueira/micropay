@@ -8,7 +8,7 @@ import (
 )
 
 func CheckEnvFile() {
-	errEnv := godotenv.Load("../../.env")
+	errEnv := godotenv.Load(".env")
 	if errEnv != nil {
 		panic(fmt.Sprintf("The .env file could not be loaded: %v", errEnv))
 	}
